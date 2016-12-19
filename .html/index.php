@@ -4,14 +4,13 @@
 	<title>Will Server</title>
 	<link rel="stylesheet" type="text/css" href=".css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href=".css/bootflat.css">
-	<link rel="stylesheet" type="text/css" href=".css/materialize.css">
 	<link rel="stylesheet" type="text/css" href=".css/style.css">
 </head>
 <body>
 
 	<nav>
 	    <div class="nav-wrapper">
-	      <a href="localhost" class="brand-logo center">My Personal Server</a>
+	      <span>My Personal Server</span>
 	    </div>
 	</nav>
 	
@@ -34,11 +33,11 @@
 			}
 			if ($pastas != "" ) { 
 			foreach($pastas as $listar){
-			   print "<div class='col-md-2'><div class='color-swatches'><div class='swatches'><div class='clearfix'><img src='.css/pasta.png' class='img'></div><div class='infos'><a href='$diretorio/$listar' href='#!' class='collection-item'>$listar</a></div></div></div></div>";}
+			   print "<a href='$diretorio/$listar' href='#!' class='collection-item'><div class='col-md-2'><div class='color-swatches'><div class='swatches'><div class='clearfix'><img src='.css/pasta.png' class='img'></div><div class='infos'>$listar</div></div></div></div></a>";}
 			   }
 			if ($arquivos != "") {
 			foreach($arquivos as $listar){
-			   print "<div class='col-md-2'><div class='color-swatches'><div class='swatches'><div class='clearfix'><img src='.css/pasta.png' class='img'></div><div class='infos'><a href='$diretorio/$listar' href='#!' class='collection-item'>$listar</a></div></div></div></div>";}
+			   print "<a href='$diretorio/$listar' href='#!' class='collection-item'><div class='col-md-2'><div class='color-swatches'><div class='swatches'><div class='clearfix'><img src='.css/pasta.png' class='img'></div><div class='infos'>$listar</div></div></div></div></a>";}
 			   }
 
 		?>
